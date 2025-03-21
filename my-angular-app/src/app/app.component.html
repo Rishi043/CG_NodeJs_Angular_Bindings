@@ -1,6 +1,10 @@
-
 <h1>{{ title }}</h1>
 
-<!-- Click event binding to open the website -->
-<img [src]="imgUrl" alt="BridgeLabz Logo" width="200" (click)="openBridgeLabz()" style="cursor: pointer;">
+<!-- Input field for user to type their name -->
+<input type="text" [(ngModel)]="userName" placeholder="Enter your name">
 
+<!-- Display dynamic greeting -->
+<h2>Hello from BridgeLabz, {{ userName }}</h2>
+
+<!-- Clickable Logo to Open BridgeLabz Website -->
+<img [src]="imgUrl" alt="BridgeLabz Logo" width="200" (click)="openBridgeLabz()" style="cursor: pointer;">
